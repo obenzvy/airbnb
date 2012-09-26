@@ -1,0 +1,45 @@
+<%= form_for(@financial) do |f| %>
+  <% if @financial.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@financial.errors.count, "error") %> prohibited this financial from being saved:</h2>
+
+      <ul>
+      <% @financial.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :security_deposit %><br />
+    <%= f.number_field :security_deposit, :value => @apt.security_deposit %>
+  </div>
+  <div class="field">
+    <%= f.label :rent %><br />
+    <%= f.number_field :rent, :value => @apt.rent %>
+  </div>
+  <div class="field">
+    <%= f.label :fixed_costs %><br />
+    <%= f.number_field :fixed_costs , :value => @apt.fixed_costs %>
+  </div>
+  <div class="field">
+    <%= f.label :utilities %><br />
+    <%= f.number_field :utilities , :value => @apt.utilities %>
+  </div>
+  <div class="field">
+    <%= f.label :days %><br />
+    <%= f.number_field :days , :value => @apt.days %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.number_field :price , :value => @apt.price %>
+  </div>
+  <div class="field">
+    <%= f.label :duration %><br />
+    <%= f.number_field :duration , :value => @apt.duration %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

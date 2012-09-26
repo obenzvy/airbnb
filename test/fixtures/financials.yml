@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  rent: 1
+  fixed_costs: 1
+  utilities: 1
+  days: 1
+  price: 1
+
+two:
+  rent: 1
+  fixed_costs: 1
+  utilities: 1
+  days: 1
+  price: 1

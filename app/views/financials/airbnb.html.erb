@@ -1,0 +1,17 @@
+<%= render "form" %>
+
+Total Risk: $<%= @apt.total_risk  %></br>
+Fixed Costs: $<%= @apt.fixed_costs %></br>
+Days Occupied: <%= @apt.days %></br>
+Airbnb Income: $<%= @apt.total_income %></br>
+Net: $<%= @apt.total_net %> </br>
+Duration Expense: <%= @apt.duration_expense %></br> 
+Duration Income: <%= @apt.duration_income %></br> 
+Monthly Cashflow: <%= @apt.monthly_cashflow %></br>
+Aggregate Cashflow: $<%= @apt.aggregate_cashflow %></br>
+Cash Low: <%= @apt.aggregate_cashflow.min %>
+Total Profit: <%= @apt.aggregate_cashflow.last %></br>
+Breakeven Month: <%= @apt.breakeven %></br>
+Monthly Net: $<%= @apt.monthly_net %></br>
+Montly ROI: <%= @apt.monthly_roi %></br>
+Total ROI: <%= @apt.total_roi %>

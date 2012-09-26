@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Rent:</b>
+  <%= @financial.rent %>
+</p>
+
+<p>
+  <b>Fixed costs:</b>
+  <%= @financial.fixed_costs %>
+</p>
+
+<p>
+  <b>Utilities:</b>
+  <%= @financial.utilities %>
+</p>
+
+<p>
+  <b>Days:</b>
+  <%= @financial.days %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @financial.price %>
+</p>
+
+
+<%= link_to 'Edit', edit_financial_path(@financial) %> |
+<%= link_to 'Back', financials_path %>
